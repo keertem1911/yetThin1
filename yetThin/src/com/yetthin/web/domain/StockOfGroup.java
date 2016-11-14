@@ -1,13 +1,20 @@
 package com.yetthin.web.domain;
 
 public class StockOfGroup {
-	private String groupName;
-	private String userID;
-	private String initMoney;
-	private String strategyId;
-	private String indexCode;
-	private String stockCode;
-	private String stockRatio;
+	private String groupName;//组合名称
+	private String userID;//用户Id
+	private String initMoney;// 初始资金
+	private String strategyId;// 策略id  0-4
+	private String indexCode;// 选择类别
+	private String stock;//  股票编码
+	private String ifOpen;
+	
+	public String getIfOpen() {
+		return ifOpen;
+	}
+	public void setIfOpen(String ifOpen) {
+		this.ifOpen = ifOpen;
+	}
 	public String getGroupName() {
 		return groupName;
 	}
@@ -38,17 +45,19 @@ public class StockOfGroup {
 	public void setIndexCode(String indexCode) {
 		this.indexCode = indexCode;
 	}
-	public String getStockCode() {
-		return stockCode;
+	public String getStock() {
+		return stock;
 	}
-	public void setStockCode(String stockCode) {
-		this.stockCode = stockCode;
+	public void setStock(String stock) {
+		this.stock = stock;
 	}
-	public String getStockRatio() {
-		return stockRatio;
-	}
-	public void setStockRatio(String stockRatio) {
-		this.stockRatio = stockRatio;
+	@Override
+	public String toString() {
+		return "StockOfGroup [groupName=" + groupName + ", userID=" + userID + ", initMoney=" + initMoney
+				+ ", strategyId=" + strategyId + ", indexCode=" + indexCode + ", stock=" + stock + ", ifOpen=" + ifOpen
+				+ "]";
 	}
 	
+
+	 
 }

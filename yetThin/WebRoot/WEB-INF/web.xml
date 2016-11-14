@@ -20,12 +20,12 @@
     <param-value>false</param-value>
   </context-param>
   <context-param>
-  	<param-name>username</param-name>
-  	<param-value>yetthindb</param-value>
+    <param-name>username</param-name>
+    <param-value>yetthindb</param-value>
   </context-param>
   <context-param>
-  	<param-name>passwd</param-name>
-  	<param-value>yetthindb2016</param-value>
+    <param-name>passwd</param-name>
+    <param-value>yetthindb2016</param-value>
   </context-param>
   <listener>
     <listener-class>zcom.yetthin.web.listener.CreateJdoaListener</listener-class>
@@ -84,5 +84,4 @@
       <taglib-location>/WEB-INF/sql.tld</taglib-location>
     </taglib>
   </jsp-config>
-   
 </web-app>

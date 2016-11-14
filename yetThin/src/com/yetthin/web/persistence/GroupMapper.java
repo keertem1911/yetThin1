@@ -8,6 +8,7 @@ import com.yetthin.web.domain.GroupComponent;
 import com.yetthin.web.domain.GroupDetail;
 import com.yetthin.web.domain.GroupRecommend;
 import com.yetthin.web.domain.Model2Info;
+import com.yetthin.web.domain.RecommendInfo;
 import com.yetthin.web.domain.StockOfGroup;
 import com.yetthin.web.domain.StockOfGroupget;
 import com.yetthin.web.domain.StockOfGroupreq;
@@ -31,4 +32,6 @@ public interface GroupMapper {
 	List<StockType> getStockType();
 	List<Model2Info> getConpetType();
 	int saveRecommend(Map<String, String> map);
+	int insertRecommend(RecommendInfo info);
+	int deleteRecommend(String id);
 }

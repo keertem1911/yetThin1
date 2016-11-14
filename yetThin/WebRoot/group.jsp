@@ -72,5 +72,39 @@
 		<input type="text" name="pageSize"/><br>
 		<input type="submit" value="submit"/>
 	</form>
+	<br/>
+		<label>股票模糊搜索</label>
+	<form action="${pageContext.request.contextPath }/searchStockCode" method="post">
+		<label>输入内容</label>
+		<input type="text" name="stockCode"/><br>
+		<label>搜索数量</label>
+		<input type="text" name="limitNum"/><br>
+		<input type="submit" value="submit"/>
+	</form>
+	
+	<br/>
+			<label>添加评论</label>
+	<form action="${pageContext.request.contextPath }/group/applyOrCreateRecommend" method="post">
+		<label>发起人Id</label>
+		<input type="text" name="discussinfoUserId"/><br>
+		<label>评论内容</label>
+		<input type="text" name="discussinfoContext"/><br>
+				<label>回复上级Id</label>
+		<input type="text" name="discussinfoHeigherId"/><br>
+		<label>组合Id</label>
+		<input type="text" name="groupId"/><br>
+		<input type="submit" value="submit"/>
+	</form>
+	
+	<br/>
+			<label>删除评论</label>
+	<form action="${pageContext.request.contextPath }/group/deleteRecommend" method="post">
+		<label>评论Id</label>
+		<input type="text" name="discussinfoId"/><br>
+		 
+		<input type="submit" value="submit"/>
+	</form>
+	
+	<br/>
 </body>
 </html>
